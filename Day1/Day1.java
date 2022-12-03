@@ -14,7 +14,7 @@ public class Day1 {
     }
 
     Day1() {
-        readfile("input");
+        readfile("");
 
         int currentElf = 0;
         int maxCarryingElf = 0;
