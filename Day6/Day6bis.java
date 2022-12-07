@@ -19,6 +19,8 @@ public class Day6bis {
 
         readfile("input");
 
+        long startTime = System.nanoTime();
+
         String input = "";
         input = allLines.get(0);
       //  input = "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw";
@@ -52,6 +54,8 @@ public class Day6bis {
             }
         }
         System.out.println(start+messageLength);
+        long endTime = System.nanoTime();
+        System.out.println("Executed in " + ((endTime - startTime)/1000000) + " ms");  //divide by 1000000 to get milliseconds.
     }
 
     private  void readfile(String filename)
